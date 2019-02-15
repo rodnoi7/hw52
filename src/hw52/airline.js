@@ -38,51 +38,73 @@ const Header = props => {
 
 const Sidebar = props => {
     return (
-        <div className="sidebar">
+    <div className="sidebar">
         	<ul className='sidebar_list'>
+        		<a href='#'>
+        			<li>
+        				{props.c_1}
+    				</li>
+    			</a>
+        		<a href='#'>
+        			<li>
+        				{props.c_2}
+    				</li>
+    			</a>
+        		<a href='#'>
+        			<li>
+        				{props.c_3}
+    				</li>
+    			</a>
+        		<a href='#'>
+        			<li>
+        				{props.c_4}
+    				</li>
+    			</a>
+        		<a href='#'>
+        			<li>
+        				{props.c_5}
+    				</li>
+    			</a>
+        		<a href='#'>
+        			<li>
+        				{props.c_6}
+    				</li>
+    			</a>
+        		<a href='#'>
+        			<li>
+        				{props.c_7}
+    				</li>
+    			</a>
+        		<a href='#'>
+        			<li>
+        				{props.c_8}
+    				</li>
+    			</a>
+        		<a href='#'>
+        			<li>
+        				{props.c_9}
+        			</li>
+    			</a>
+        	</ul>
+        </div>
+    );
+};
+
+const Content = props => {
+    return (
+        <div className="content">
+        	<ul className='flight_list'>
         		<li>
-        			<a href='#'>
-        				Air New Zealand
-        			</a>
-        		</li>
-        		<li>
-        			<a href='#'>
-        				Atlantic Airlines
-        			</a>
-        		</li>
-        		<li>
-        			<a href='#'>
-        				Aurigny Air Services
-        			</a>
-        		</li>
-        		<li>
-        			<a href='#'>
-        				Blue Islands
-        			</a>
-        		</li>
-        		<li>
-        			<a href='#'>
-        				Flybe
-        			</a>
-        		</li>
-        		<li>
-        			<a href='#'>
-        				AirBaltic
-        			</a>
-        		</li>
-        		<li>
-        			<a href='#'>
-        				Bulgaria Air
-        			</a>
-        		</li>
-        		<li>
-        			<a href='#'>
-        				Austrian Airlines
-        			</a>
-        		</li>
-        		<li>
-        			<a href='#'>
-        				Белавиа
+        			<h5>
+        				{props.way_ticket_1}
+        			</h5>
+        			<p>
+        				Number of flight: {props.number_ticket_1}
+        				Price: {props.price_ticket_1}
+        				Date: {props.date_ticket_1}
+        			</p>
+        			<a href='{props.buy_href}'>
+        				{props.buy}
         			</a>
         		</li>
         	</ul>
@@ -90,5 +112,4 @@ const Sidebar = props => {
     );
 };
 
-export default Header;
-export default Sidebar;
+export { Header, Sidebar, Content };
