@@ -57,8 +57,10 @@ a {
     padding: 5px;
 }
 
-.sidebar {
-    float: left;
+.sidebar .sidebar_list {
+    width: 30%;
+    float: right;
+    margin-right: 68px;
 }
 
 .sidebar ul li {
@@ -78,4 +80,37 @@ a {
 .sidebar ul li:hover {
     padding: 7px;
     color: #0ff;
+}
+
+.ticket_card {
+    border: 1px solid #d8d8d8;
+    width: 60%;
+    margin: 30px;
+    border-radius: 6px;
+    color: #484c4f;
+    padding-bottom: 30px;
+}
+
+.ticket_card h4 {
+    margin-left: 60px;
+}
+
+.ticket_card a {
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0 10px 40px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.ticket_card a:hover {
+    padding: 12px;
+}
+
+.ticket_card h3 {
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 18px;
+    border-bottom: 1px solid #d8d8d8;
 }
