@@ -221,9 +221,46 @@ const Content = props => {
 const Footer = props => {
     return (
         <div className="footer">
-        	
+        	<div className='links'>
+        		<ul>
+        			<a href={props.href}>
+        				<li>
+        					{props.about_site}
+        				</li>
+        			</a>
+        			<a href={props.href}>
+        				<li>
+        					{props.regul}
+        				</li>
+        			</a>
+        			<a href={props.href}>
+        				<li>
+        					{props.help}
+        				</li>
+        			</a>
+        			<a href={props.href}>
+        				<li>
+        					{props.advertising}
+        				</li>
+        			</a>
+        			<a href={props.href}>
+        				<li>
+        					{props.contacts}
+        				</li>
+        			</a>
+        		</ul>
+        	</div>
+        	<div className='copyright_info'>
+	        	<p>
+	        		{props.copyright_1}<br/>
+	        		{props.copyright_2}
+	        	</p>
+	        		<a href={props.href}>
+	        			{props.map}
+	        		</a>
+	        </div>
         </div>
     );
 };
 
-export { Header, Sidebar, Content };
+export { Header, Sidebar, Content, Footer};

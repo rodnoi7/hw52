@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
-import { Header, Sidebar, Content} from './hw52/airline';
+import { Header, Sidebar, Content, Footer} from './hw52/airline';
 import logo from './logo.png'
 
 class App extends Component {
@@ -37,6 +37,19 @@ class App extends Component {
                 {way: 'Almaty-Bishkek', num: '№16', price: '3300', date: '25.02.2019'},
                 {way: 'New York-Washington', num: '№19', price: '21000', date: '30.06.2019'},
                 {buy: 'Buy ticket', href: '#'}
+        ],
+        footer_info: [
+            {
+                about_page: 'About us', 
+                regulations: 'Regulations', 
+                help: 'Help', 
+                advertising: 'Advertising', 
+                contacts: 'Contacts', 
+                href: '#',
+                register: 'AirGram ® is a registered Trademark',
+                register_2: 'Copyright © 2019 AirGram',
+                map: 'Map of page'
+            }
         ]
     }
 
@@ -62,6 +75,11 @@ class App extends Component {
                     way_ticket_5={this.state.tickets_info[4].way} num_ticket_5={this.state.tickets_info[4].num} price_ticket_5={this.state.tickets_info[4].price} date_ticket_5={this.state.tickets_info[4].date}
                     way_ticket_6={this.state.tickets_info[5].way} num_ticket_6={this.state.tickets_info[5].num} price_ticket_6={this.state.tickets_info[5].price} date_ticket_6={this.state.tickets_info[5].date} 
                     buy={this.state.tickets_info[6].buy} href={this.state.tickets_info[6].href} />
+
+                <Footer 
+                    about_site={this.state.footer_info[0].about_page} regul={this.state.footer_info[0].regulations} help={this.state.footer_info[0].help} 
+                    advertising={this.state.footer_info[0].advertising} contacts={this.state.footer_info[0].contacts} href={this.state.footer_info[0].href} 
+                    copyright_1={this.state.footer_info[0].register} copyright_2={this.state.footer_info[0].register_2} map={this.state.footer_info[0].map} />
             </div>
         );
     }
